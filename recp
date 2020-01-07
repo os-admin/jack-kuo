@@ -14,7 +14,7 @@ Darwin)
     cp="pbcopy"
     ;;
 *)
-    echo"not support"
+    echo "not support"
     exit 1
     ;;
 esac
@@ -36,7 +36,7 @@ for fn in $@; do
         ;;
     esac
 
-    echo $comment
+    echo "$comment"
     cat $fn
     ((count++))
     if [ $count -ne $# ]; then
