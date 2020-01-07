@@ -5,7 +5,7 @@ if [ $# -eq 0 ]; then
     exit 1
 fi
 
-OS=$(uname -s)
+OS=`uname -s`
 case $OS in
 Linux)
     cp="xclip -sel clip"
